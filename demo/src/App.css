@@ -12,7 +12,34 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+}
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +55,38 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  margin-top: 10px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto ;
+  gap: 10px;
+  
+}
+.container .card{
+  background-color: #F1F1F1;
+}
+.footer {
+  width: 100%;
+  background-color: #C2B506;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  
+  box-sizing: border-box;
+}
+
+
+.container p button{
+  color: white;
+  width: 100%;
+border: none;
+background-color: black;
+padding: 0.5rem 0;
+
+
+}
+.container img {
+  width: 30rem;
+  
 }
